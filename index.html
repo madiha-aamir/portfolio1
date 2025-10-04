@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+
+ 
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(62, 187, 149);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" style="color:white;">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero" style="color:white;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" style="color:white;">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" style="color:white;">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" style="color:white;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="hero" class="d-flex align-items-center vh-100 text-dark" 
+    style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZP_0C04AOiZk6FIOB6JY9RcMofT5Mz2u0rA&s') center/cover no-repeat;">
+    <div class="container text-center" data-aos="fade-up">
+      <h1>
+        <span class="display-4 fw-bold" style="color:#fd7ab7;">Hello, I’m </span>
+        <span class="display-4 fw-bold" style="color:#ff1493;">Madiha Aamir</span>
+      </h1>
+      <p class="lead">A Web Developer passionate about creating interactive experiences.</p>
+      <a href="#projects" class="btn btn-lg mt-3" 
+         style="background-color:#ff1493; color:white; border:none;">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container" data-aos="fade-right">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="data:image/jpeg;base64,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" alt="Profile" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>I am a passionate developer with skills in HTML, CSS, JavaScript, and Bootstrap.</p>
+          <p><i class="fa-solid fa-code me-2" style="color:blue;"></i> Web Development</p>
+          <p><i class="fa-solid fa-paintbrush me-2" style="color:green;"></i> UI/UX Design</p>
+          <p><i class="fa-solid fa-database me-2" style="color:orange;"></i> Database Management</p>
+          <p><i class="fa-solid fa-mobile-screen-button me-2" style="color:red;"></i> Responsive Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<section id="projects" class="py-5" style="background-color:#ffcae3;">
+  <div class="container" data-aos="zoom-in">
+    <h2 class="text-center mb-3" style="color: rgb(62, 187, 149);">My Projects</h2>
+
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrcpA3fp7e9sEqhbjDSv6uk1Z6BiDpcC73kUi3Pom1TnvTzNm-uZS0375e2OT7AijdRRw&usqp=CAU" 
+               class="card-img-top" alt="Match-making Website">
+          <div class="card-body text-center">
+            <h5 class="card-title">Match-making Website</h5>
+            <p class="card-text">A responsive website built with Bootstrap, Font Awesome, and AOS animations and using jframe(netbeans).</p>
+            <a href="#" class="btn" 
+               style="border:2px solid #ff1493; color:#ff1493;"
+               onmouseover="this.style.backgroundColor='#ff1493'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor=''; this.style.color='#ff1493';">
+               View More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://marketplace.canva.com/EAGhembMWD0/1/0/283w/canva-blue-pink-white-simple-cute-illustration-thank-you-letter-QEDv6rOmtVw.jpg" 
+               class="card-img-top" alt="E-Commerce Store">
+          <div class="card-body text-center">
+            <h5 class="card-title">E-Commerce Store</h5>
+            <p class="card-text">An online store with product listings, shopping cart, and checkout built using Bootstrap grid system.</p>
+            <a href="#" class="btn" 
+               style="border:2px solid #ff1493; color:#ff1493;"
+               onmouseover="this.style.backgroundColor='#ff1493'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor=''; this.style.color='#ff1493';">
+               View More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://marketplace.canva.com/EAGMApyrFmk/1/0/1131w/canva-purple-white-cute-aesthetic-thank-you-letter-2lG4YtKGy6Q.jpg" 
+               class="card-img-top" alt="Weather App">
+          <div class="card-body text-center">
+            <h5 class="card-title">Weather App</h5>
+            <p class="card-text">A web app that fetches live weather data using an API and displays it with Bootstrap cards.</p>
+            <a href="#" class="btn" 
+               style="border:2px solid #ff1493; color:#ff1493;"
+               onmouseover="this.style.backgroundColor='#ff1493'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor=''; this.style.color='#ff1493';">
+               View More
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> 
+  <section id="contact" class="py-5 bg-white">
+    <div class="container" data-aos="fade-left">
+      <h2 class="text-center mb-5">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+  <div class="mb-3">
+    <label for="name" class="form-label">Your Name</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Your Email</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+
+  <div class="mb-3">
+    <label for="contact" class="form-label">Contact</label>
+    <select class="form-control" id="contact">
+      <option value="+92">Pakistan (+92)</option>
+      <option value="+91">India (+91)</option>
+      <option value="+880">Bangladesh (+880)</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="4"></textarea>
+  </div>
+
+  <button type="submit" class="btn w-100" 
+    style="background-color:#ff1493; color:white; border:none;">
+    <i class="fa-solid fa-paper-plane"></i> Send
+  </button>
+</form>
+    </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-3 text-center" style="background-color: rgb(62, 187, 149); color:white;">
+    <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+    <p>
+      <a href="#" style="color:white; margin-right:10px;"><i class="fab fa-github"></i></a>
+      <a href="#" style="color:white; margin-right:10px;"><i class="fab fa-linkedin"></i></a>
+      <a href="#" style="color:white;"><i class="fab fa-twitter"></i></a>
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
